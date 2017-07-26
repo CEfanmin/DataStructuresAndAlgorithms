@@ -6,11 +6,13 @@ public:
     void setLength(double len);
     double getLength(void);
     Line(double len);
+    Line(const Line &obj);
     ~Line();
 
 
 private:
     double length;
+    int *ptr;
 };
 
 Line::Line( double len)
@@ -19,9 +21,17 @@ Line::Line( double len)
     length = len;
 }
 
+Line::Line(const Line &obj){
+    std::cout << "调用拷贝构造函数并为指针 ptr 分配内存" << std::endl;
+    ptr = new int;
+    *ptr = *obj.ptr;
+}
+
+
 Line::~Line(void)
 {
     std::cout << "Object is being deleted" << std::endl;
+    delete ptr;
 }
 
 void Line::setLength( double len )
@@ -31,9 +41,7 @@ void Line::setLength( double len )
 
 double Line::getLength( void )
 {
-    return length;
+    return *ptr;
 }
-
-
 
 #endif

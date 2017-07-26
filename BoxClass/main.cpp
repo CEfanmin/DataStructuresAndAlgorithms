@@ -3,9 +3,16 @@
 #include "Line.h"
 
 int pro1(){
-	Box Box1;
-	Box Box2;
+	Box Box1(3.3, 1.2, 1.5);
+	Box Box2(3.3, 1.2, 1.8);
 	double volume =0.0;
+
+    if(Box1.compare(Box2)){
+        std::cout <<"Box2 is smaller than Box1"<<std::endl;
+    }
+    else{
+        std::cout << "Box2 is equal to or larger than Box1" <<std::endl;
+    }
 
     Box1.setLength(6.0);
     Box1.setBreadth(7.0);
@@ -20,6 +27,8 @@ int pro1(){
 
     volume = Box2.getVolume();
     std::cout << "Box2 的体积：" << volume <<std::endl;
+    std::cout << "Total objects: " <<
+              Box::getCount() << std::endl;
     return 0;
 }
 
@@ -31,8 +40,20 @@ int pro2(){
    return 0;
 }
 
+void pro3(){
+    Box Box3(10,10,10);
+    Box *ptrBox;
+    ptrBox = &Box3;
+    std::cout<< "Box3 的体积：" << ptrBox->getVolume() <<std::endl;
+}
+
 int main(){
+    Box fbox;
     pro1();
-    pro2();
+    //pro2();
+    printWidth(fbox);  //friend function
+
+    pro3();
+    return 0;
 
 }
