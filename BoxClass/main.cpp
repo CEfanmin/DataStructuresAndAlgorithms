@@ -2,8 +2,6 @@
 #include "Box.h"
 #include "Line.h"
 
-
-
 int pro1(){
 	Box Box1;
 	Box Box2;
@@ -32,7 +30,6 @@ int pro2(){
    std::cout << "Length of line : " << line.getLength() <<std::endl;
    return 0;
 }
-
 
 int main(){
     pro1();
