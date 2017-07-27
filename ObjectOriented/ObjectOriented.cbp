@@ -34,6 +34,7 @@
 		</Compiler>
 		<Unit filename="inheritance.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="shape.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />
