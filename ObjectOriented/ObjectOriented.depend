@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1501122098 source:d:\mygithub\datastructuresandalgorithms\objectoriented\main.cpp
+	<iostream>
+	<fstream>
+	<string>
+
