@@ -1,7 +1,7 @@
 #include <iostream>
 #include "inheritance.h"
 
-/*int main(){
+int main(){
     Rectangle rect;
 
     rect.setWidth(5);
@@ -12,4 +12,4 @@
     std::cout << "Total area: " << rect.getArea() << std::endl;
 
     return 0;
-}*/
+}

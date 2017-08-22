@@ -8,7 +8,7 @@ public:
         std::cout << "LibMat::LibMat() default constructor!\n";
     }
 
-    virtual ~LibMat(){
+    ~LibMat(){
         std::cout << "LibMat::~LibMat() destructor!\n";
     }
 
@@ -48,7 +48,7 @@ public:
     AudioBook( const string &title,
 		       const string &author, const string &narrator )
 		: Book( title, author ), _narrator( narrator ){
-		cout << "AudioBook::AudioBook( " << _title
+		std::cout << "AudioBook::AudioBook( " << _title
 			 << ", " << _author
 			 << ", " << _narrator
 			 << " )  constructor\n";
