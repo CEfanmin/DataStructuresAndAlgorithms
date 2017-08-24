@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1503563939 source:d:\mygithub\datastructuresandalgorithms\sumarray\main.cpp
+	<iostream>
+	<vector>
+
