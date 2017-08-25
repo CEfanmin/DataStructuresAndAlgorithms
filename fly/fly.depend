@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1503652086 source:d:\mygithub\datastructuresandalgorithms\fly\main.cpp
+	<iostream>
+	<cmath>
+
