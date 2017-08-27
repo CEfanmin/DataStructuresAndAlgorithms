@@ -1,23 +1,10 @@
-#include "stdio.h"
-#include "string.h"
-#include "ctype.h"
-#include "stdlib.h"
-#include "io.h"
-#include "math.h"
-#include "time.h"
-
-typedef struct Node
-{
-    int data;
-    struct Node *next;
-}Node;
-
-typedef struct Node *LinkList;
+#include "creat.h"
 
 int InitList(LinkList *L)
 {
     *L=(LinkList)malloc(sizeof(Node));
-            return 0;
+    if(!(*L))
+        return 0;
     (*L)->next=NULL;
     return 1;
 }
@@ -35,20 +22,4 @@ void CreateListHead(LinkList *L, int n)
 		p->next = (*L)->next;
 		(*L)->next = p;						/*  插入到表头 */
 	}
-}
-
-int main(){
-    LinkList L;
-    LinkList p;
-    int res =InitList(&L);
-
-    CreateListHead(&L,10);
-    p = L->next;
-    while(p){
-        printf("%d", p->data);
-        printf(" ");
-        p = p->next;
-    }
-
-    return 0;
 }
