@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1503887709 source:d:\mygithub\datastructuresandalgorithms\creatlisthead\creat.cpp
+	"creat.h"
+
+1503887717 d:\mygithub\datastructuresandalgorithms\creatlisthead\creat.h
+	"stdio.h"
+	"string.h"
+	"ctype.h"
+	"stdlib.h"
+	"io.h"
+	"math.h"
+	"time.h"
+
+1503887072 source:d:\mygithub\datastructuresandalgorithms\creatlisthead\main.cpp
+	"creat.h"
+

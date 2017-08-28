@@ -15,10 +15,10 @@ typedef struct Node
     struct Node *next;
 }Node;
 
-typedef struct Node *LinkList;
-
+typedef struct Node* LinkList;
+int ListLength(LinkList L);
 int InitList(LinkList *L);
 void CreateListHead(LinkList *L, int n);
-
+void ClearList(LinkList *L);
 
 #endif // CREAT_H

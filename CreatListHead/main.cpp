@@ -1,9 +1,9 @@
 #include "creat.h"
 
 int main(){
-    LinkList L;
-    LinkList p;
+    LinkList L, p;
     int res =InitList(&L);
+
     if (res ==0){
         printf("Initial error");
     }
@@ -14,6 +14,10 @@ int main(){
         printf(" ");
         p = p->next;
     }
+    ClearList(&L);
 
+    int reslen = ListLength(L);
+
+    printf("\nszie is :%d", reslen);
     return 0;
 }
