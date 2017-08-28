@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1503911723 source:d:\mygithub\datastructuresandalgorithms\mixpaint\main.cpp
+	<iostream>
+	<vector>
+
