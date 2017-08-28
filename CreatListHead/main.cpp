@@ -17,7 +17,6 @@ int main(){
     ClearList(&L);
 
     int reslen = ListLength(L);
-
     printf("\nszie is :%d", reslen);
     return 0;
 }

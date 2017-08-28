@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1503892747 source:d:\mygithub\datastructuresandalgorithms\appleshare\main.cpp
+	<iostream>
+	<vector>
+	<algorithm>
+
