@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1503988543 source:d:\mygithub\datastructuresandalgorithms\stack\main.cpp
+	<iostream>
+	"Stack.h"
+	<stdio.h>
+
+1503988462 d:\mygithub\datastructuresandalgorithms\stack\stack.h
+
+1503988561 source:d:\mygithub\datastructuresandalgorithms\stack\stack.cpp
+	"Stack.h"
+	<stdio.h>
+
