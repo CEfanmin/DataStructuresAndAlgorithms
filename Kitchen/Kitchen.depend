@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1503997800 source:d:\mygithub\datastructuresandalgorithms\kitchen\main.cpp
+	<iostream>
+	<string>
+	<set>
+
