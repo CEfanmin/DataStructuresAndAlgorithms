@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1505047071 source:d:\mygithub\datastructuresandalgorithms\baidu01\main.cpp
+	<iostream>
+	<set>
+	<vector>
+	<algorithm>
+
