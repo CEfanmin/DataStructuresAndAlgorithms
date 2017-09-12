@@ -53,8 +53,7 @@ int test2(){
 
     unsigned int temp = 0;
     unsigned int maxStep = 0;   //忽略某个点和不忽略 对于总长度的差值
-    for(int i=1;i<n-1; ++i)
-    {
+    for(int i=1;i<n-1; ++i){
         temp= abs(a[i]-a[i-1])+abs(a[i+1]-a[i])-abs(a[i+1]-a[i-1]);
         if(temp>maxStep)
             maxStep = temp;
