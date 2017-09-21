@@ -116,10 +116,34 @@ int test4(){
     return 0;
 }
 
+int test5(){
+    char a[1000];
+    while(cin>>a){
+        int len = strlen(a);
+        int end = len-1, idx=0;
+        for(int i=0; i<=end ;){
+            if(a[i]>='A'&&a[i]<='Z'){
+                a[len-1] = a[i];
+                idx = i;
+                for(int j = i+1;j<len;j++){
+                    a[idx] = a[j];
+                    idx++;
+                }
+                end--;
+            }
+            else
+                i++;
+        }
+        cout<<a<<endl;
+    }
+    return 0;
+}
+
 int main(){
     //test1();
     //test2();
     //test3();
-    test4();
+    //test4();
+    test5();
 
 }
